@@ -1,0 +1,255 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Photo &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+
+	<div id="fh5co-page">
+
+		<div class="aside-toggle btn-circle">
+			<a href="#"><span></span><em>About</em></a>
+		</div>
+		<div class="back-to-home btn-circle">
+			<a href="index.html"><span></span><em>Back</em></a>
+		</div>
+
+		<div id="fh5co-aside">
+			<div class="image-bg"></div>
+			<div class="overlay"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="fh5co-aside-inner">
+						<div class="row" id="fh5co-bio">
+							<div class="col-md-12">
+								<h2>About</h2>
+							</div>
+							<div class="col-md-12">
+								<p>中国からキルギス、タジキスタン、ウズベキスタンを移動した時の写真です。</p>
+							</div>
+							<!-- <div class="col-md-12 fh5co-social">
+								<a href="#"><i class="icon-envelope"></i></a>
+								<a href="#"><i class="icon-twitter"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-google-plus"></i></a>
+							</div> -->
+							<div class="col-md-12" style="margin-top: 40px;">
+								<p>&copy; 2016 Free HTML5 Template. All Rights Reserved. Designed by <a href="http://gettemplates.co/">GetTemplates</a>
+									Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="fh5co-image-grid">
+
+			<div class="grid" id="VueWorks" v-cloak>
+				<div class="grid-sizer"></div>
+
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn" v-for="vimg in vimgs">
+					<a :href="vimg.src" class="image-popup" :title="vimg.title">
+						<div class="img-wrap">
+							<img :src="vimg.src" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner popup">
+								<div>
+									<h2>{{vimg.title}}</h2>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Magnific -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Isotope & imagesLoaded -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- GSAP  -->
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/CSSPlugin.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Vue JS -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<script>
+
+		var app = new Vue({
+			el: '#VueWorks',
+			data: {
+				vimgs: [
+					{ "src": "images03/s-DSC_0036.jpg", "title": "s-DSC_0036.jpg" },
+					{ "src": "images03/s-DSC_0346.jpg", "title": "s-DSC_0346.jpg" },
+					{ "src": "images03/s-DSC_0456.jpg", "title": "s-DSC_0456.jpg" },
+					{ "src": "images03/s-DSC_0492.jpg", "title": "s-DSC_0492.jpg" },
+					{ "src": "images03/s-DSC_0842.jpg", "title": "s-DSC_0842.jpg" },
+					{ "src": "images03/s-DSC_0927.jpg", "title": "s-DSC_0927.jpg" },
+					{ "src": "images03/s-DSC_0969.jpg", "title": "s-DSC_0969.jpg" },
+					{ "src": "images03/s-DSC_0982.jpg", "title": "s-DSC_0982.jpg" },
+					{ "src": "images03/s-DSC_1021.jpg", "title": "s-DSC_1021.jpg" },
+					{ "src": "images03/s-DSC_1041.jpg", "title": "s-DSC_1041.jpg" },
+					{ "src": "images03/s-DSC_1069.jpg", "title": "s-DSC_1069.jpg" },
+					{ "src": "images03/s-DSC_1191.jpg", "title": "s-DSC_1191.jpg" },
+					{ "src": "images03/s-DSC_1462.jpg", "title": "s-DSC_1462.jpg" },
+					{ "src": "images03/s-DSC_1657.jpg", "title": "s-DSC_1657.jpg" },
+					{ "src": "images03/s-DSC_1677.jpg", "title": "s-DSC_1677.jpg" },
+					{ "src": "images03/s-DSC_1869.jpg", "title": "s-DSC_1869.jpg" },
+					{ "src": "images03/s-DSC_1970.jpg", "title": "s-DSC_1970.jpg" },
+					{ "src": "images03/s-DSC_1994.jpg", "title": "s-DSC_1994.jpg" },
+					{ "src": "images03/s-DSC_2076.jpg", "title": "s-DSC_2076.jpg" },
+					{ "src": "images03/s-DSC_2100.jpg", "title": "s-DSC_2100.jpg" },
+					{ "src": "images03/s-DSC_2338.jpg", "title": "s-DSC_2338.jpg" },
+					{ "src": "images03/s-DSC_2465.jpg", "title": "s-DSC_2465.jpg" },
+					{ "src": "images03/s-DSC_2499.jpg", "title": "s-DSC_2499.jpg" },
+					{ "src": "images03/s-DSC_2504.jpg", "title": "s-DSC_2504.jpg" },
+					{ "src": "images03/s-DSC_2507.jpg", "title": "s-DSC_2507.jpg" },
+					{ "src": "images03/s-DSC_2643.jpg", "title": "s-DSC_2643.jpg" },
+					{ "src": "images03/s-DSC_2713.jpg", "title": "s-DSC_2713.jpg" },
+					{ "src": "images03/s-DSC_3201.jpg", "title": "s-DSC_3201.jpg" },
+					{ "src": "images03/s-DSC_3323.jpg", "title": "s-DSC_3323.jpg" },
+					{ "src": "images03/s-DSC_3504.jpg", "title": "s-DSC_3504.jpg" },
+					{ "src": "images03/s-DSC_3665.jpg", "title": "s-DSC_3665.jpg" },
+					{ "src": "images03/s-DSC_3686.jpg", "title": "s-DSC_3686.jpg" },
+					{ "src": "images03/s-DSC_3786.jpg", "title": "s-DSC_3786.jpg" },
+					{ "src": "images03/s-DSC_3793.jpg", "title": "s-DSC_3793.jpg" },
+					{ "src": "images03/s-DSC_3929.jpg", "title": "s-DSC_3929.jpg" },
+					{ "src": "images03/s-DSC_3934.jpg", "title": "s-DSC_3934.jpg" },
+					{ "src": "images03/s-DSC_3943.jpg", "title": "s-DSC_3943.jpg" },
+					{ "src": "images03/s-DSC_3960.jpg", "title": "s-DSC_3960.jpg" },
+					{ "src": "images03/s-DSC_3964.jpg", "title": "s-DSC_3964.jpg" },
+					{ "src": "images03/s-DSC_4011.jpg", "title": "s-DSC_4011.jpg" },
+					{ "src": "images03/s-DSC_4161.jpg", "title": "s-DSC_4161.jpg" },
+					{ "src": "images03/s-DSC_4213.jpg", "title": "s-DSC_4213.jpg" },
+					{ "src": "images03/s-DSC_4235.jpg", "title": "s-DSC_4235.jpg" },
+					{ "src": "images03/s-DSC_4240.jpg", "title": "s-DSC_4240.jpg" },
+					{ "src": "images03/s-DSC_4264.jpg", "title": "s-DSC_4264.jpg" },
+					{ "src": "images03/s-DSC_4268.jpg", "title": "s-DSC_4268.jpg" },
+					{ "src": "images03/s-DSC_4270.jpg", "title": "s-DSC_4270.jpg" },
+					{ "src": "images03/s-DSC_4278.jpg", "title": "s-DSC_4278.jpg" },
+					{ "src": "images03/s-DSC_4281.jpg", "title": "s-DSC_4281.jpg" },
+					{ "src": "images03/s-DSC_4282.jpg", "title": "s-DSC_4282.jpg" },
+					{ "src": "images03/s-DSC_4296.jpg", "title": "s-DSC_4296.jpg" },
+					{ "src": "images03/s-DSC_4301.jpg", "title": "s-DSC_4301.jpg" },
+					{ "src": "images03/s-DSC_4302.jpg", "title": "s-DSC_4302.jpg" },
+					{ "src": "images03/s-DSC_4308.jpg", "title": "s-DSC_4308.jpg" },
+					{ "src": "images03/s-DSC_4319.jpg", "title": "s-DSC_4319.jpg" },
+					{ "src": "images03/s-DSC_4322.jpg", "title": "s-DSC_4322.jpg" },
+					{ "src": "images03/s-DSC_4324.jpg", "title": "s-DSC_4324.jpg" },
+					{ "src": "images03/s-DSC_4329.jpg", "title": "s-DSC_4329.jpg" },
+					{ "src": "images03/s-DSC_4341.jpg", "title": "s-DSC_4341.jpg" },
+					{ "src": "images03/s-DSC_4344.jpg", "title": "s-DSC_4344.jpg" },
+					{ "src": "images03/s-DSC_4346.jpg", "title": "s-DSC_4346.jpg" },
+					{ "src": "images03/s-DSC_4357.jpg", "title": "s-DSC_4357.jpg" },
+					{ "src": "images03/s-DSC_4426.jpg", "title": "s-DSC_4426.jpg" },
+					{ "src": "images03/s-DSC_4467.jpg", "title": "s-DSC_4467.jpg" },
+					{ "src": "images03/s-DSC_4475.jpg", "title": "s-DSC_4475.jpg" },
+					{ "src": "images03/s-DSC_4482.jpg", "title": "s-DSC_4482.jpg" },
+					{ "src": "images03/s-DSC_4554.jpg", "title": "s-DSC_4554.jpg" },
+					{ "src": "images03/s-DSC_4605.jpg", "title": "s-DSC_4605.jpg" },
+					{ "src": "images03/s-DSC_4631.jpg", "title": "s-DSC_4631.jpg" },
+					{ "src": "images03/s-DSC_4657.jpg", "title": "s-DSC_4657.jpg" },
+					{ "src": "images03/s-DSC_4736.jpg", "title": "s-DSC_4736.jpg" },
+					{ "src": "images03/s-DSC_4933.jpg", "title": "s-DSC_4933.jpg" },
+					{ "src": "images03/s-DSC_5195.jpg", "title": "s-DSC_5195.jpg" },
+					{ "src": "images03/s-DSC_5440.jpg", "title": "s-DSC_5440.jpg" },
+					{ "src": "images03/s-DSC_5650.jpg", "title": "s-DSC_5650.jpg" },
+					{ "src": "images03/s-DSC_5696.jpg", "title": "s-DSC_5696.jpg" },
+					{ "src": "images03/s-DSC_5736.jpg", "title": "s-DSC_5736.jpg" },
+					{ "src": "images03/s-DSC_5855.jpg", "title": "s-DSC_5855.jpg" },
+					{ "src": "images03/s-DSC_6034.jpg", "title": "s-DSC_6034.jpg" },
+					{ "src": "images03/s-DSC_6041.jpg", "title": "s-DSC_6041.jpg" },
+					{ "src": "images03/s-DSC_6600.jpg", "title": "s-DSC_6600.jpg" },
+					{ "src": "images03/s-DSC_6691.jpg", "title": "s-DSC_6691.jpg" },
+					{ "src": "images03/s-DSC_6935.jpg", "title": "s-DSC_6935.jpg" },
+					{ "src": "images03/s-DSC_7172.jpg", "title": "s-DSC_7172.jpg" },
+					{ "src": "images03/s-DSC_7191.jpg", "title": "s-DSC_7191.jpg" },
+					{ "src": "images03/s-DSC_7219.jpg", "title": "s-DSC_7219.jpg" },
+					{ "src": "images03/s-DSC_7474.jpg", "title": "s-DSC_7474.jpg" },
+					{ "src": "images03/s-DSC_7476.jpg", "title": "s-DSC_7476.jpg" },
+					{ "src": "images03/s-DSC_7538.jpg", "title": "s-DSC_7538.jpg" },
+					{ "src": "images03/s-DSC_7693.jpg", "title": "s-DSC_7693.jpg" },
+					{ "src": "images03/s-DSC_7704.jpg", "title": "s-DSC_7704.jpg" }
+				]
+			}
+		});
+
+	</script>
+
+</body>
+
+</html>

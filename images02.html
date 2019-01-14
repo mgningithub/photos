@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Aesthetic by gettemplates.co
+	Twitter: http://twitter.com/gettemplateco
+	URL: http://gettemplates.co
+-->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Photo &mdash; Free Website Template, Free HTML5 Template by gettemplates.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by gettemplates.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="gettemplates.co" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+	<!-- <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet"> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+
+
+	<div id="fh5co-page">
+
+		<div class="aside-toggle btn-circle">
+			<a href="#"><span></span><em>About</em></a>
+		</div>
+		<div class="back-to-home btn-circle">
+			<a href="index.html"><span></span><em>Back</em></a>
+		</div>
+
+		<div id="fh5co-aside">
+			<div class="image-bg"></div>
+			<div class="overlay"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<div id="fh5co-aside-inner">
+						<div class="row" id="fh5co-bio">
+							<div class="col-md-12">
+								<h2>About</h2>
+							</div>
+							<div class="col-md-12">
+								<p>エジプトからナイル川を渡りスーダンへ移動した時の写真です。</p>
+							</div>
+							<!-- <div class="col-md-12 fh5co-social">
+								<a href="#"><i class="icon-envelope"></i></a>
+								<a href="#"><i class="icon-twitter"></i></a>
+								<a href="#"><i class="icon-linkedin"></i></a>
+								<a href="#"><i class="icon-instagram"></i></a>
+								<a href="#"><i class="icon-google-plus"></i></a>
+							</div> -->
+							<div class="col-md-12" style="margin-top: 40px;">
+								<p>&copy; 2016 Free HTML5 Template. All Rights Reserved. Designed by <a href="http://gettemplates.co/">GetTemplates</a>
+									Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid" id="fh5co-image-grid">
+
+			<div class="grid" id="VueWorks" v-cloak>
+				<div class="grid-sizer"></div>
+
+				<div class="grid-item item animate-box" data-animate-effect="fadeIn" v-for="vimg in vimgs">
+					<a :href="vimg.src" class="image-popup" :title="vimg.title">
+						<div class="img-wrap">
+							<img :src="vimg.src" alt="" class="img-responsive">
+						</div>
+						<div class="text-wrap">
+							<div class="text-inner popup">
+								<div>
+									<h2>{{vimg.title}}</h2>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+
+	<!-- Magnific -->
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/magnific-popup-options.js"></script>
+	<!-- Isotope & imagesLoaded -->
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- GSAP  -->
+	<script src="js/TweenLite.min.js"></script>
+	<script src="js/CSSPlugin.min.js"></script>
+	<script src="js/EasePack.min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	<!-- Vue JS -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+	<script>
+
+		var app = new Vue({
+			el: '#VueWorks',
+			data: {
+				vimgs: [
+					{ "src": "images02/s-DSC_0174.jpg", "title": "s-DSC_0174.jpg" },
+					{ "src": "images02/s-DSC_0179.jpg", "title": "s-DSC_0179.jpg" },
+					{ "src": "images02/s-DSC_0654.jpg", "title": "s-DSC_0654.jpg" },
+					{ "src": "images02/s-DSC_0745.jpg", "title": "s-DSC_0745.jpg" },
+					{ "src": "images02/s-DSC_0796.jpg", "title": "s-DSC_0796.jpg" },
+					{ "src": "images02/s-DSC_1034.jpg", "title": "s-DSC_1034.jpg" },
+					{ "src": "images02/s-DSC_1100.jpg", "title": "s-DSC_1100.jpg" },
+					{ "src": "images02/s-DSC_1234.jpg", "title": "s-DSC_1234.jpg" },
+					{ "src": "images02/s-DSC_1251.jpg", "title": "s-DSC_1251.jpg" },
+					{ "src": "images02/s-DSC_1868.jpg", "title": "s-DSC_1868.jpg" },
+					{ "src": "images02/s-DSC_4045.jpg", "title": "s-DSC_4045.jpg" },
+					{ "src": "images02/s-DSC_4168.jpg", "title": "s-DSC_4168.jpg" },
+					{ "src": "images02/s-DSC_4531.jpg", "title": "s-DSC_4531.jpg" },
+					{ "src": "images02/s-DSC_4551.jpg", "title": "s-DSC_4551.jpg" },
+					{ "src": "images02/s-DSC_4553.jpg", "title": "s-DSC_4553.jpg" },
+					{ "src": "images02/s-DSC_4655.jpg", "title": "s-DSC_4655.jpg" },
+					{ "src": "images02/s-DSC_4704.jpg", "title": "s-DSC_4704.jpg" },
+					{ "src": "images02/s-DSC_4793.jpg", "title": "s-DSC_4793.jpg" },
+					{ "src": "images02/s-DSC_4903.jpg", "title": "s-DSC_4903.jpg" },
+					{ "src": "images02/s-DSC_5046.jpg", "title": "s-DSC_5046.jpg" },
+					{ "src": "images02/s-DSC_5082.jpg", "title": "s-DSC_5082.jpg" },
+					{ "src": "images02/s-DSC_5086.jpg", "title": "s-DSC_5086.jpg" },
+					{ "src": "images02/s-DSC_5125.jpg", "title": "s-DSC_5125.jpg" },
+					{ "src": "images02/s-DSC_5144.jpg", "title": "s-DSC_5144.jpg" },
+					{ "src": "images02/s-DSC_5345.jpg", "title": "s-DSC_5345.jpg" },
+					{ "src": "images02/s-DSC_5346.jpg", "title": "s-DSC_5346.jpg" },
+					{ "src": "images02/s-DSC_5350.jpg", "title": "s-DSC_5350.jpg" },
+					{ "src": "images02/s-DSC_5484.jpg", "title": "s-DSC_5484.jpg" },
+					{ "src": "images02/s-DSC_5533.jpg", "title": "s-DSC_5533.jpg" },
+					{ "src": "images02/s-DSC_5582.jpg", "title": "s-DSC_5582.jpg" },
+					{ "src": "images02/s-DSC_5671.jpg", "title": "s-DSC_5671.jpg" },
+					{ "src": "images02/s-DSC_5711.jpg", "title": "s-DSC_5711.jpg" },
+					{ "src": "images02/s-DSC_5779.jpg", "title": "s-DSC_5779.jpg" },
+					{ "src": "images02/s-DSC_5900.jpg", "title": "s-DSC_5900.jpg" },
+					{ "src": "images02/s-DSC_5901.jpg", "title": "s-DSC_5901.jpg" },
+					{ "src": "images02/s-DSC_6046.jpg", "title": "s-DSC_6046.jpg" },
+					{ "src": "images02/s-DSC_6182.jpg", "title": "s-DSC_6182.jpg" },
+					{ "src": "images02/s-DSC_6191.jpg", "title": "s-DSC_6191.jpg" },
+					{ "src": "images02/s-DSC_6244.jpg", "title": "s-DSC_6244.jpg" },
+					{ "src": "images02/s-DSC_6272.jpg", "title": "s-DSC_6272.jpg" },
+					{ "src": "images02/s-DSC_6298.jpg", "title": "s-DSC_6298.jpg" },
+					{ "src": "images02/s-DSC_6306.jpg", "title": "s-DSC_6306.jpg" },
+					{ "src": "images02/s-DSC_6569.jpg", "title": "s-DSC_6569.jpg" },
+					{ "src": "images02/s-DSC_6587.jpg", "title": "s-DSC_6587.jpg" },
+					{ "src": "images02/s-DSC_6631.jpg", "title": "s-DSC_6631.jpg" },
+					{ "src": "images02/s-DSC_6632.jpg", "title": "s-DSC_6632.jpg" },
+					{ "src": "images02/s-DSC_6634.jpg", "title": "s-DSC_6634.jpg" },
+					{ "src": "images02/s-DSC_6652.jpg", "title": "s-DSC_6652.jpg" },
+					{ "src": "images02/s-DSC_6678.jpg", "title": "s-DSC_6678.jpg" },
+					{ "src": "images02/s-DSC_6727.jpg", "title": "s-DSC_6727.jpg" }
+				]
+			}
+		});
+
+	</script>
+
+</body>
+
+</html>
